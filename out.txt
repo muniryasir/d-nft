@@ -1,0 +1,1010 @@
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1678:17
+     |
+1678 |     state: &mut State,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1678 |     state: &mut State<S>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1719:21
+     |
+1719 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1719 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2139:21
+     |
+2139 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2139 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2262:21
+     |
+2262 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2262 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2305:21
+     |
+2305 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2305 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+   --> src/lib.rs:791:6
+    |
+791 | impl State {
+    |      ^^^^^ expected 1 generic argument
+    |
+note: struct defined here, with 1 generic parameter: `S`
+   --> src/lib.rs:681:8
+    |
+681 | struct State<S> {
+    |        ^^^^^ -
+help: add missing generic argument
+    |
+791 | impl State<S> {
+    |           +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1114:53
+     |
+1114 | fn contract_view(_ctx: &ReceiveContext, host: &Host<State>) -> ReceiveResult<ViewState> {
+     |                                                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1114 | fn contract_view(_ctx: &ReceiveContext, host: &Host<State<S>>) -> ReceiveResult<ViewState> {
+     |                                                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1468:70
+     |
+1468 | fn contract_serialization_helper(_ctx: &ReceiveContext, _host: &Host<State>) -> ContractResult<()> {
+     |                                                                      ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1468 | fn contract_serialization_helper(_ctx: &ReceiveContext, _host: &Host<State<S>>) -> ContractResult<()> {
+     |                                                                           +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1755:17
+     |
+1755 |     host: &Host<State>,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1755 |     host: &Host<State<S>>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1784:17
+     |
+1784 |     host: &Host<State>,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1784 |     host: &Host<State<S>>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1820:62
+     |
+1820 | fn contract_is_blacklisted(ctx: &ReceiveContext, host: &Host<State>) -> ContractResult<Vec<bool>> {
+     |                                                              ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1820 | fn contract_is_blacklisted(ctx: &ReceiveContext, host: &Host<State<S>>) -> ContractResult<Vec<bool>> {
+     |                                                                   +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1870:17
+     |
+1870 |     host: &Host<State>,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1870 |     host: &Host<State<S>>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1908:17
+     |
+1908 |     host: &Host<State>,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1908 |     host: &Host<State<S>>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1941:17
+     |
+1941 |     host: &Host<State>,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1941 |     host: &Host<State<S>>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1979:64
+     |
+1979 | fn contract_on_cis2_received(ctx: &ReceiveContext, host: &Host<State>) -> ContractResult<()> {
+     |                                                                ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1979 | fn contract_on_cis2_received(ctx: &ReceiveContext, host: &Host<State<S>>) -> ContractResult<()> {
+     |                                                                     +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2026:17
+     |
+2026 |     host: &Host<State>,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2026 |     host: &Host<State<S>>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2058:18
+     |
+2058 |     _host: &Host<State>,
+     |                  ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2058 |     _host: &Host<State<S>>,
+     |                       +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2089:67
+     |
+2089 | fn contract_set_implementor(ctx: &ReceiveContext, host: &mut Host<State>) -> ContractResult<()> {
+     |                                                                   ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2089 | fn contract_set_implementor(ctx: &ReceiveContext, host: &mut Host<State<S>>) -> ContractResult<()> {
+     |                                                                        +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2231:62
+     |
+2231 | fn contract_set_paused(ctx: &ReceiveContext, host: &mut Host<State>) -> ContractResult<()> {
+     |                                                              ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2231 | fn contract_set_paused(ctx: &ReceiveContext, host: &mut Host<State<S>>) -> ContractResult<()> {
+     |                                                                   +++
+
+error[E0599]: no method named `add_metadata` found for mutable reference `&mut State<S>` in the current scope
+   --> src/lib.rs:243:15
+    |
+243 |         state.add_metadata(&token_id, &metadata)?;
+    |               ^^^^^^^^^^^^ method not found in `&mut State<S>`
+
+error[E0599]: no method named `upgrade_token` found for mutable reference `&mut State<S>` in the current scope
+   --> src/lib.rs:394:11
+    |
+394 |     state.upgrade_token(&token_id)?;
+    |           ^^^^^^^^^^^^^ method not found in `&mut State<S>`
+
+error[E0599]: no method named `get_metadata` found for mutable reference `&mut State<S>` in the current scope
+   --> src/lib.rs:398:29
+    |
+398 |         metadata_url: state.get_metadata(&token_id)?,
+    |                             ^^^^^^^^^^^^ method not found in `&mut State<S>`
+
+error[E0560]: struct `State<concordium_std::ExternStateApi>` has no field named `nonces_registry`
+   --> src/lib.rs:798:13
+    |
+798 |             nonces_registry: state_builder.new_map(),
+    |             ^^^^^^^^^^^^^^^ `State<_>` does not have this field
+    |
+    = note: all struct fields are already assigned
+
+error[E0560]: struct `State<concordium_std::ExternStateApi>` has no field named `mint_airdrop`
+   --> src/lib.rs:799:13
+    |
+799 |             mint_airdrop,
+    |             ^^^^^^^^^^^^ `State<_>` does not have this field
+    |
+    = note: all struct fields are already assigned
+
+error[E0560]: struct `State<concordium_std::ExternStateApi>` has no field named `blacklist`
+   --> src/lib.rs:800:13
+    |
+800 |             blacklist: state_builder.new_set(),
+    |             ^^^^^^^^^ `State<_>` does not have this field
+    |
+    = note: all struct fields are already assigned
+
+error[E0560]: struct `State<concordium_std::ExternStateApi>` has no field named `paused`
+   --> src/lib.rs:801:13
+    |
+801 |             paused: false,
+    |             ^^^^^^ `State<_>` does not have this field
+    |
+    = note: all struct fields are already assigned
+
+error[E0560]: struct `State<concordium_std::ExternStateApi>` has no field named `roles`
+   --> src/lib.rs:802:13
+    |
+802 |             roles: state_builder.new_map(),
+    |             ^^^^^ `State<_>` does not have this field
+    |
+    = note: all struct fields are already assigned
+
+error[E0599]: no variant or associated item named `UpgradeTokenFailedError` found for enum `CustomContractError` in the current scope
+   --> src/lib.rs:835:56
+    |
+694 | pub enum CustomContractError {
+    | ---------------------------- variant or associated item `UpgradeTokenFailedError` not found for this enum
+...
+835 |             ContractError::Custom(CustomContractError::UpgradeTokenFailedError)
+    |                                                        ^^^^^^^^^^^^^^^^^^^^^^^ variant or associated item not found in `CustomContractError`
+
+error[E0599]: no function or associated item named `empty` found for struct `State` in the current scope
+    --> src/lib.rs:1078:28
+     |
+681  | struct State<S> {
+     | --------------- function or associated item `empty` not found for this struct
+...
+1078 |     let mut state = State::empty(state_builder, mint_airdrop);
+     |                            ^^^^^ function or associated item not found in `State<_>`
+
+error[E0609]: no field `to` on type `&MintParams`
+    --> src/lib.rs:1184:29
+     |
+1184 |     let to_address = params.to.address();
+     |                             ^^ unknown field
+     |
+     = note: available fields are: `owner`, `tokens`
+
+error[E0609]: no field `token_id` on type `&MintParams`
+    --> src/lib.rs:1198:17
+     |
+1198 |         &params.token_id,
+     |                 ^^^^^^^^ unknown field
+     |
+     = note: available fields are: `owner`, `tokens`
+
+error[E0609]: no field `metadata_url` on type `&MintParams`
+    --> src/lib.rs:1199:17
+     |
+1199 |         &params.metadata_url,
+     |                 ^^^^^^^^^^^^ unknown field
+     |
+     = note: available fields are: `owner`, `tokens`
+
+error[E0609]: no field `token_id` on type `&MintParams`
+    --> src/lib.rs:1207:26
+     |
+1207 |         token_id: params.token_id,
+     |                          ^^^^^^^^ unknown field
+     |
+     = note: available fields are: `owner`, `tokens`
+
+error[E0609]: no field `token_id` on type `&MintParams`
+    --> src/lib.rs:1214:30
+     |
+1214 |         token_id:     params.token_id,
+     |                              ^^^^^^^^ unknown field
+     |
+     = note: available fields are: `owner`, `tokens`
+
+error[E0599]: no method named `mint` found for mutable reference `&mut State<S>` in the current scope
+    --> src/lib.rs:1275:15
+     |
+1275 |         state.mint(&token_id, &mint_param, &params.owner, builder);
+     |               ^^^^ method not found in `&mut State<S>`
+
+Some errors have detailed explanations: E0107, E0412, E0560, E0599, E0609.
+For more information about an error, try `rustc --explain E0107`.
+error: could not compile `d_nft` (lib) due to 44 previous errors
+Error: Could not build smart contract.
+
+Caused by:
+    0: Could not build module schema.
+    1: Compilation failed.
+yasir@DESKTOP-6EKPNER:~/concordium_dev/contracts/dNFT/d-nft$ cargo concordium build --verifiable docker.io/concordium/verifiable-sc:1.70.0 -o module.wasm.v1 -e >>out.txt
+   Compiling d_nft v0.1.0 (/home/yasir/concordium_dev/contracts/dNFT/d-nft)
+error[E0412]: cannot find type `S` in this scope
+   --> src/lib.rs:815:42
+    |
+815 |         state_builder: &mut StateBuilder<S>,
+    |                                          ^ not found in this scope
+    |
+help: you might be missing a type parameter
+    |
+791 | impl<S> State {
+    |     +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1073:17
+     |
+1073 | ) -> InitResult<State> {
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1073 | ) -> InitResult<State<S>> {
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1181:21
+     |
+1181 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1181 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1298:21
+     |
+1298 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1298 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1344:21
+     |
+1344 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1344 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1371:21
+     |
+1371 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1371 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1444:21
+     |
+1444 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1444 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1484:22
+     |
+1484 |     _host: &mut Host<State>,
+     |                      ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1484 |     _host: &mut Host<State<S>>,
+     |                           +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1555:21
+     |
+1555 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1555 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1678:17
+     |
+1678 |     state: &mut State,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1678 |     state: &mut State<S>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1719:21
+     |
+1719 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1719 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2139:21
+     |
+2139 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2139 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2262:21
+     |
+2262 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2262 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2305:21
+     |
+2305 |     host: &mut Host<State>,
+     |                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2305 |     host: &mut Host<State<S>>,
+     |                          +++
+
+error[E0107]: missing generics for struct `State`
+   --> src/lib.rs:791:6
+    |
+791 | impl State {
+    |      ^^^^^ expected 1 generic argument
+    |
+note: struct defined here, with 1 generic parameter: `S`
+   --> src/lib.rs:681:8
+    |
+681 | struct State<S> {
+    |        ^^^^^ -
+help: add missing generic argument
+    |
+791 | impl State<S> {
+    |           +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1114:53
+     |
+1114 | fn contract_view(_ctx: &ReceiveContext, host: &Host<State>) -> ReceiveResult<ViewState> {
+     |                                                     ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1114 | fn contract_view(_ctx: &ReceiveContext, host: &Host<State<S>>) -> ReceiveResult<ViewState> {
+     |                                                          +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1468:70
+     |
+1468 | fn contract_serialization_helper(_ctx: &ReceiveContext, _host: &Host<State>) -> ContractResult<()> {
+     |                                                                      ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1468 | fn contract_serialization_helper(_ctx: &ReceiveContext, _host: &Host<State<S>>) -> ContractResult<()> {
+     |                                                                           +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1755:17
+     |
+1755 |     host: &Host<State>,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1755 |     host: &Host<State<S>>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1784:17
+     |
+1784 |     host: &Host<State>,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1784 |     host: &Host<State<S>>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1820:62
+     |
+1820 | fn contract_is_blacklisted(ctx: &ReceiveContext, host: &Host<State>) -> ContractResult<Vec<bool>> {
+     |                                                              ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1820 | fn contract_is_blacklisted(ctx: &ReceiveContext, host: &Host<State<S>>) -> ContractResult<Vec<bool>> {
+     |                                                                   +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1870:17
+     |
+1870 |     host: &Host<State>,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1870 |     host: &Host<State<S>>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1908:17
+     |
+1908 |     host: &Host<State>,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1908 |     host: &Host<State<S>>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1941:17
+     |
+1941 |     host: &Host<State>,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1941 |     host: &Host<State<S>>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:1979:64
+     |
+1979 | fn contract_on_cis2_received(ctx: &ReceiveContext, host: &Host<State>) -> ContractResult<()> {
+     |                                                                ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+1979 | fn contract_on_cis2_received(ctx: &ReceiveContext, host: &Host<State<S>>) -> ContractResult<()> {
+     |                                                                     +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2026:17
+     |
+2026 |     host: &Host<State>,
+     |                 ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2026 |     host: &Host<State<S>>,
+     |                      +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2058:18
+     |
+2058 |     _host: &Host<State>,
+     |                  ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2058 |     _host: &Host<State<S>>,
+     |                       +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2089:67
+     |
+2089 | fn contract_set_implementor(ctx: &ReceiveContext, host: &mut Host<State>) -> ContractResult<()> {
+     |                                                                   ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2089 | fn contract_set_implementor(ctx: &ReceiveContext, host: &mut Host<State<S>>) -> ContractResult<()> {
+     |                                                                        +++
+
+error[E0107]: missing generics for struct `State`
+    --> src/lib.rs:2231:62
+     |
+2231 | fn contract_set_paused(ctx: &ReceiveContext, host: &mut Host<State>) -> ContractResult<()> {
+     |                                                              ^^^^^ expected 1 generic argument
+     |
+note: struct defined here, with 1 generic parameter: `S`
+    --> src/lib.rs:681:8
+     |
+681  | struct State<S> {
+     |        ^^^^^ -
+help: add missing generic argument
+     |
+2231 | fn contract_set_paused(ctx: &ReceiveContext, host: &mut Host<State<S>>) -> ContractResult<()> {
+     |                                                                   +++
+
+error[E0599]: no method named `add_metadata` found for mutable reference `&mut State<S>` in the current scope
+   --> src/lib.rs:243:15
+    |
+243 |         state.add_metadata(&token_id, &metadata)?;
+    |               ^^^^^^^^^^^^ method not found in `&mut State<S>`
+
+error[E0599]: no method named `upgrade_token` found for mutable reference `&mut State<S>` in the current scope
+   --> src/lib.rs:394:11
+    |
+394 |     state.upgrade_token(&token_id)?;
+    |           ^^^^^^^^^^^^^ method not found in `&mut State<S>`
+
+error[E0599]: no method named `get_metadata` found for mutable reference `&mut State<S>` in the current scope
+   --> src/lib.rs:398:29
+    |
+398 |         metadata_url: state.get_metadata(&token_id)?,
+    |                             ^^^^^^^^^^^^ method not found in `&mut State<S>`
+
+error[E0560]: struct `State<concordium_std::ExternStateApi>` has no field named `nonces_registry`
+   --> src/lib.rs:798:13
+    |
+798 |             nonces_registry: state_builder.new_map(),
+    |             ^^^^^^^^^^^^^^^ `State<_>` does not have this field
+    |
+    = note: all struct fields are already assigned
+
+error[E0560]: struct `State<concordium_std::ExternStateApi>` has no field named `mint_airdrop`
+   --> src/lib.rs:799:13
+    |
+799 |             mint_airdrop,
+    |             ^^^^^^^^^^^^ `State<_>` does not have this field
+    |
+    = note: all struct fields are already assigned
+
+error[E0560]: struct `State<concordium_std::ExternStateApi>` has no field named `blacklist`
+   --> src/lib.rs:800:13
+    |
+800 |             blacklist: state_builder.new_set(),
+    |             ^^^^^^^^^ `State<_>` does not have this field
+    |
+    = note: all struct fields are already assigned
+
+error[E0560]: struct `State<concordium_std::ExternStateApi>` has no field named `paused`
+   --> src/lib.rs:801:13
+    |
+801 |             paused: false,
+    |             ^^^^^^ `State<_>` does not have this field
+    |
+    = note: all struct fields are already assigned
+
+error[E0560]: struct `State<concordium_std::ExternStateApi>` has no field named `roles`
+   --> src/lib.rs:802:13
+    |
+802 |             roles: state_builder.new_map(),
+    |             ^^^^^ `State<_>` does not have this field
+    |
+    = note: all struct fields are already assigned
+
+error[E0599]: no variant or associated item named `UpgradeTokenFailedError` found for enum `CustomContractError` in the current scope
+   --> src/lib.rs:835:56
+    |
+694 | pub enum CustomContractError {
+    | ---------------------------- variant or associated item `UpgradeTokenFailedError` not found for this enum
+...
+835 |             ContractError::Custom(CustomContractError::UpgradeTokenFailedError)
+    |                                                        ^^^^^^^^^^^^^^^^^^^^^^^ variant or associated item not found in `CustomContractError`
+
+error[E0599]: no function or associated item named `empty` found for struct `State` in the current scope
+    --> src/lib.rs:1078:28
+     |
+681  | struct State<S> {
+     | --------------- function or associated item `empty` not found for this struct
+...
+1078 |     let mut state = State::empty(state_builder, mint_airdrop);
+     |                            ^^^^^ function or associated item not found in `State<_>`
+
+error[E0609]: no field `to` on type `&MintParams`
+    --> src/lib.rs:1184:29
+     |
+1184 |     let to_address = params.to.address();
+     |                             ^^ unknown field
+     |
+     = note: available fields are: `owner`, `tokens`
+
+error[E0609]: no field `token_id` on type `&MintParams`
+    --> src/lib.rs:1198:17
+     |
+1198 |         &params.token_id,
+     |                 ^^^^^^^^ unknown field
+     |
+     = note: available fields are: `owner`, `tokens`
+
+error[E0609]: no field `metadata_url` on type `&MintParams`
+    --> src/lib.rs:1199:17
+     |
+1199 |         &params.metadata_url,
+     |                 ^^^^^^^^^^^^ unknown field
+     |
+     = note: available fields are: `owner`, `tokens`
+
+error[E0609]: no field `token_id` on type `&MintParams`
+    --> src/lib.rs:1207:26
+     |
+1207 |         token_id: params.token_id,
+     |                          ^^^^^^^^ unknown field
+     |
+     = note: available fields are: `owner`, `tokens`
+
+error[E0609]: no field `token_id` on type `&MintParams`
+    --> src/lib.rs:1214:30
+     |
+1214 |         token_id:     params.token_id,
+     |                              ^^^^^^^^ unknown field
+     |
+     = note: available fields are: `owner`, `tokens`
+
+error[E0599]: no method named `mint` found for mutable reference `&mut State<S>` in the current scope
+    --> src/lib.rs:1275:15
+     |
+1275 |         state.mint(&token_id, &mint_param, &params.owner, builder);
+     |               ^^^^ method not found in `&mut State<S>`
+
+Some errors have detailed explanations: E0107, E0412, E0560, E0599, E0609.
+For more information about an error, try `rustc --explain E0107`.
+error: could not compile `d_nft` (lib) due to 44 previous errors
+Error: Could not build smart contract.
+
+Caused by:
+    0: Could not build module schema.
+    1: Compilation failed.
+yasir@DESKTOP-6EKPNER:~/concordium_dev/contracts/dNFT/d-nft$ 

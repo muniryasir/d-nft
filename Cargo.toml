@@ -1,0 +1,28 @@
+[package]
+name = "d_nft"
+version = "0.1.0"
+authors = [ "muniryasir <muniryasir2009@gmail.com>" ]
+edition = "2021"
+license = "MPL-2.0"
+description = "q"
+
+[features]
+default = ["std"]
+std = ["concordium-std/std", "concordium-cis2/std"]
+bump_alloc = ["concordium-std/bump_alloc"]
+
+[dependencies]
+concordium-std = {version = "10.0", default-features = false}
+concordium-cis2 = {version = "6.1", default-features = false}
+
+[dev-dependencies]
+concordium-smart-contract-testing = "4.2"
+concordium-std-derive = "6.0"
+rand = "0.8"
+
+[lib]
+crate-type=["cdylib", "rlib"]
+
+[profile.release]
+codegen-units = 1
+opt-level = "s"
